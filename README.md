@@ -30,4 +30,5 @@ Firebase plays a crucial role in this application as it handles user registratio
   <img src="Simulator Screen Shot - iPhone 14 Plus - 2023-05-25 at 15.46.33.png" width="200">
   <img src="Simulator Screen Shot - iPhone 14 Plus - 2023-05-25 at 15.46.49.png" width="200">
   <img src="Simulator Screen Shot - iPhone 14 Plus - 2023-05-25 at 15.47.06.png" width="200">
+  <img src="Simulator Screen Shot - iPhone 14 Plus - 2023-05-26 at 16.05.40.png" width="200">
 </p>
