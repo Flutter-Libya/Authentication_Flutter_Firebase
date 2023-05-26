@@ -5,7 +5,9 @@ import '../components/my_textfield.dart';
 import '../components/square_tile.dart';
 
 class LoginPage extends StatefulWidget {
-  LoginPage({super.key});
+  final Function()? onTap;
+
+  LoginPage({super.key,required this.onTap});
 
   @override
   State<LoginPage> createState() => _LoginPageState();
@@ -88,6 +90,7 @@ class _LoginPageState extends State<LoginPage> {
               ),
               const SizedBox(height: 25),
               MyButton(
+                text: "Sign In",
                 onTap: () => _signUserIn(context),
               ),
               const SizedBox(height: 50),
@@ -118,11 +121,14 @@ class _LoginPageState extends State<LoginPage> {
                     style: TextStyle(color: Colors.grey[700]),
                   ),
                   const SizedBox(width: 4),
-                  const Text(
-                    'Register now',
-                    style: TextStyle(
-                      color: Colors.blue,
-                      fontWeight: FontWeight.bold,
+                  GestureDetector(
+                    onTap: widget.onTap,
+                    child: const Text(
+                      'Register now',
+                      style: TextStyle(
+                        color: Colors.blue,
+                        fontWeight: FontWeight.bold,
+                      ),
                     ),
                   ),
                 ],
