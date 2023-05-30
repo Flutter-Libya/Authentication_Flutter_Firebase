@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import '../components/my_button.dart';
 import '../components/my_textfield.dart';
 import '../components/square_tile.dart';
+import '../services/auth_services.dart';
 
 class RegisterPage extends StatefulWidget {
   final Function()? onTap;
@@ -16,15 +17,18 @@ class RegisterPage extends StatefulWidget {
 class _RegisterPageState extends State<RegisterPage> {
   final TextEditingController _emailController = TextEditingController();
   final TextEditingController _confirmPasswordController =
-      TextEditingController();
+  TextEditingController();
   final TextEditingController _passwordController = TextEditingController();
+
+  final GoogleSignInService _googleSignInService = GoogleSignInService();
 
   void showmessage(String errorMessage) {
     showDialog(
-        context: context,
-        builder: (context) {
-          return AlertDialog(title: Text(errorMessage));
-        });
+      context: context,
+      builder: (context) {
+        return AlertDialog(title: Text(errorMessage));
+      },
+    );
   }
 
   void _signUserup(BuildContext context) async {
@@ -34,19 +38,33 @@ class _RegisterPageState extends State<RegisterPage> {
     }
 
     showDialog(
-        context: context,
-        builder: (context) {
-          return Center(child: CircularProgressIndicator());
-        });
+      context: context,
+      builder: (context) {
+        return Center(child: CircularProgressIndicator());
+      },
+    );
 
     try {
       await FirebaseAuth.instance.createUserWithEmailAndPassword(
-          email: _emailController.text, password: _passwordController.text);
+        email: _emailController.text,
+        password: _passwordController.text,
+      );
       Navigator.pop(context);
     } on FirebaseAuthException catch (e) {
       Navigator.pop(context);
       //wrong Email
       showmessage(e.code);
+    }
+  }
+
+  Future<void> _handleGoogleSignIn() async {
+    User? user = await _googleSignInService.signInWithGoogle();
+    if (user != null) {
+      // User signed in successfully with Google
+      // Perform any additional actions with the user, such as navigating to a different page
+    } else {
+      // Google sign-in failed
+      // Handle the error or display a message to the user
     }
   }
 
@@ -89,7 +107,6 @@ class _RegisterPageState extends State<RegisterPage> {
                 hintText: 'Confirm Password',
                 obscureText: true,
               ),
-
               const SizedBox(height: 25),
               MyButton(
                 text: "Sign Up",
@@ -108,8 +125,11 @@ class _RegisterPageState extends State<RegisterPage> {
               const SizedBox(height: 50),
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
-                children: const [
-                  SquareTile(imagePath: 'lib/images/google.png'),
+                children: [
+                  GestureDetector(
+                    onTap: _handleGoogleSignIn,
+                    child: SquareTile(imagePath: 'lib/images/google.png'),
+                  ),
                   SizedBox(width: 25),
                   SquareTile(imagePath: 'lib/images/apple.png'),
                 ],

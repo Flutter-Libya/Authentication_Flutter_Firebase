@@ -1,0 +1,15 @@
+io.flutter.plugins.googlesignin.google_sign_in_android-jetified-play-services-auth-20.5.0-0 /Users/ahmedabufayed/.gradle/caches/transforms-3/1e311f6e807eb8b14703826bf82cd02f/transformed/jetified-play-services-auth-20.5.0/res
+io.flutter.plugins.googlesignin.google_sign_in_android-jetified-annotation-experimental-1.1.0-1 /Users/ahmedabufayed/.gradle/caches/transforms-3/88ff950da3cb8129a9ee5d721b4958de/transformed/jetified-annotation-experimental-1.1.0/res
+io.flutter.plugins.googlesignin.google_sign_in_android-jetified-play-services-base-18.0.1-2 /Users/ahmedabufayed/.gradle/caches/transforms-3/8cdaac2f784d09efb08ac7f2bbffb2be/transformed/jetified-play-services-base-18.0.1/res
+io.flutter.plugins.googlesignin.google_sign_in_android-jetified-window-1.0.0-beta04-3 /Users/ahmedabufayed/.gradle/caches/transforms-3/b4a8a78ef3b97ff4bd1712b763945fb9/transformed/jetified-window-1.0.0-beta04/res
+io.flutter.plugins.googlesignin.google_sign_in_android-core-1.6.0-4 /Users/ahmedabufayed/.gradle/caches/transforms-3/cd6d0925e140bb72b0079ecf4d23dd09/transformed/core-1.6.0/res
+io.flutter.plugins.googlesignin.google_sign_in_android-jetified-play-services-basement-18.2.0-5 /Users/ahmedabufayed/.gradle/caches/transforms-3/e1fb867f1c43d40344e92b999682c5bf/transformed/jetified-play-services-basement-18.2.0/res
+io.flutter.plugins.googlesignin.google_sign_in_android-jetified-window-java-1.0.0-beta04-6 /Users/ahmedabufayed/.gradle/caches/transforms-3/e2ae42269f6c6d794b95394b9c38cbd9/transformed/jetified-window-java-1.0.0-beta04/res
+io.flutter.plugins.googlesignin.google_sign_in_android-main-7 /Users/ahmedabufayed/.pub-cache/hosted/pub.dev/google_sign_in_android-6.1.14/android/src/main/res
+io.flutter.plugins.googlesignin.google_sign_in_android-release-8 /Users/ahmedabufayed/.pub-cache/hosted/pub.dev/google_sign_in_android-6.1.14/android/src/release/res
+io.flutter.plugins.googlesignin.google_sign_in_android-pngs-9 /Users/ahmedabufayed/Desktop/Authentication_Flutter_Firebase/build/google_sign_in_android/generated/res/pngs/release
+io.flutter.plugins.googlesignin.google_sign_in_android-resValues-10 /Users/ahmedabufayed/Desktop/Authentication_Flutter_Firebase/build/google_sign_in_android/generated/res/resValues/release
+io.flutter.plugins.googlesignin.google_sign_in_android-rs-11 /Users/ahmedabufayed/Desktop/Authentication_Flutter_Firebase/build/google_sign_in_android/generated/res/rs/release
+io.flutter.plugins.googlesignin.google_sign_in_android-mergeReleaseResources-12 /Users/ahmedabufayed/Desktop/Authentication_Flutter_Firebase/build/google_sign_in_android/intermediates/incremental/release/mergeReleaseResources/merged.dir
+io.flutter.plugins.googlesignin.google_sign_in_android-mergeReleaseResources-13 /Users/ahmedabufayed/Desktop/Authentication_Flutter_Firebase/build/google_sign_in_android/intermediates/incremental/release/mergeReleaseResources/stripped.dir
+io.flutter.plugins.googlesignin.google_sign_in_android-merged_res-14 /Users/ahmedabufayed/Desktop/Authentication_Flutter_Firebase/build/google_sign_in_android/intermediates/merged_res/release
